@@ -1,0 +1,26 @@
+.footer3-container {
+  height: 10%;
+  background-color: black;
+  margin: -3% 0 -3% 0;
+}
+.footer3 p {
+  text-align: center;
+  color: #dcd7d7;
+  font-size: 14px;
+  padding: 1%;
+}
+.footer3 p span {
+  color: yellow;
+}
+.footer3 p a {
+  color: yellow;
+}
+@media only screen and (max-width: 992px) {
+  .footer3-container {
+    height: auto;
+    padding: 10px 20px;
+  }
+  .footer3 p {
+    font-size: 0.85rem;
+  }
+}

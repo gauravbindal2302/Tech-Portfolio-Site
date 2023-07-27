@@ -1,0 +1,119 @@
+.projects-container {
+  height: 100vh;
+  background: #161b3f;
+  padding-top: 2%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.projects-heading h1 {
+  font-size: 2.4rem;
+  color: #fff;
+  text-align: center;
+  font-family: "Exo 2", sans-serif;
+}
+.projects-heading::after {
+  content: "";
+  position: absolute;
+  transform: translateX(-50%);
+  width: 75px;
+  height: 4px;
+  background: #fff;
+}
+.projects-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 50px;
+  margin: 100px 200px;
+}
+.project {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  background-color: white;
+}
+.project img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+}
+.layer {
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
+  position: absolute;
+  left: 0;
+  bottom: -40px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5% 10%;
+  text-align: center;
+  font-size: 14px;
+  transition: height 0.8s;
+}
+.layer h3 {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.layer a {
+  margin-top: 10px;
+  color: #ff004f;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 60px;
+  background: #fff;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  text-align: center;
+}
+.project:hover img {
+  transform: scale(1.1);
+}
+.project:hover .layer {
+  height: calc(100% + 50px);
+}
+
+@media screen and (max-width: 800px) {
+  .projects-container {
+    height: auto;
+    padding: 5vh 0;
+  }
+  .projects-heading h1 {
+    font-size: 1.4rem;
+  }
+  .projects-heading::after {
+    height: 0.2rem;
+    width: 15vw;
+  }
+  .projects-list {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 35px 15vw 25px 15vw;
+    grid-gap: 30px;
+  }
+  .layer {
+    bottom: 0px;
+    padding: 0% 10%;
+    font-size: 12px;
+  }
+  .layer h3 {
+    margin: 10px 0;
+    font-size: 1.8em;
+  }
+  .layer a {
+    margin-top: 0px;
+    font-size: 14px;
+    line-height: 42px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .project:hover .layer {
+    height: 100%;
+  }
+}

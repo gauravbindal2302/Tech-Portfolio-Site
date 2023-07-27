@@ -1,0 +1,14 @@
+.footer2-container {
+    height: auto;
+    width: 100%;
+}
+.footer2-parent img {
+    width: 100%;
+    height: 11rem;
+}
+@media screen and (max-width: 729px) {
+    .footer2-container {
+        visibility: hidden;
+        display: none;
+    }   
+}

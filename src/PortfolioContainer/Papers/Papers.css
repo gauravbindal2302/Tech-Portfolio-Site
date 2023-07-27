@@ -1,0 +1,37 @@
+.papers-container {
+  height: 100vh;
+  background: #161b3f;
+  padding-top: 2%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.papers-heading h1 {
+  font-size: 2.4rem;
+  color: #fff;
+  text-align: center;
+  font-family: "Exo 2", sans-serif;
+}
+.papers-heading::after {
+  content: "";
+  position: absolute;
+  transform: translateX(-50%);
+  width: 75px;
+  height: 4px;
+  background: #fff;
+}
+
+@media screen and (max-width: 729px) {
+  .papers-container {
+    height: auto;
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+  }
+  .papers-heading h1 {
+    font-size: 1.4rem;
+  }
+  .papers-heading::after {
+    height: 0.2rem;
+    width: 15vw;
+  }
+}

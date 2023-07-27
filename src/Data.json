@@ -1,0 +1,70 @@
+{
+  "projects": [
+    {
+      "title": "Super Resolution of an Image (Sr-Gan)",
+      "description": "Implemented a Generative Adversarial Network based on a CVPR paper that can super-resolve any image by a factor of x4 with better perceptual quality.",
+      "image": "https://b2633864.smushcdn.com/2633864/wp-content/uploads/2022/06/police-chase-1024x1024.png?lossy=1&strip=1&webp=1",
+      "link": "/"
+    },
+    {
+      "title": "Forecasting of Parking Occupancy",
+      "description": "Analyzed Birmingham car parking dataset and developed a SARIMA model to forecast the seasonal time-series based occupancy rate of the whole city.",
+      "image": "https://b2633864.smushcdn.com/2633864/wp-content/uploads/2022/06/police-chase-1024x1024.png?lossy=1&strip=1&webp=1",
+      "link": "/"
+    },
+    {
+      "title": "Super Resolution of an Image (Sr-Gan)",
+      "description": "Implemented a Generative Adversarial Network based on a CVPR paper that can super-resolve any image by a factor of x4 with better perceptual quality.",
+      "image": "https://b2633864.smushcdn.com/2633864/wp-content/uploads/2022/06/police-chase-1024x1024.png?lossy=1&strip=1&webp=1",
+      "link": "/"
+    }
+  ],
+  "skills": [
+    {
+      "title": "Python",
+      "description": "Quas et voluptatibus non impedit cum libero consequuntur maiores?",
+      "image": "python.png",      
+      "link": "/"
+    },
+    {
+      "title": "R",
+      "description": "Quas et voluptatibus non impedit cum libero consequuntur maiores?",
+      "image": "r.png",
+      "link": "/"
+    },
+    {
+      "title": "Matlab",
+      "description": "Quas et voluptatibus non impedit cum libero consequuntur maiores?",
+      "image": "matlab.png",
+      "link": "/"
+    },
+    {
+      "title": "C",
+      "description": "Quas et voluptatibus non impedit cum libero consequuntur maiores?",
+      "image": "c.png",
+      "link": "/"
+    }
+  ],
+  "AOI": [
+    {
+      "title": "Deep Learning",
+      "image": "deep-learning.png"
+    },
+    {
+      "title": "Machine Learning",
+      "image": "machine-learning.png"
+    },
+    {
+      "title": "Computer Vision",
+      "image": "computer-vision.png"
+    },
+    {
+      "title": "Data Science",
+      "image": "data-science.png"
+    },
+    {
+      "title": "NLP",
+      "image": "nlp.png"
+    }
+  ]
+}

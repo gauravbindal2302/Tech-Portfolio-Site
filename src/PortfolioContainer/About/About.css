@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Wix+Madefor+Display&display=swap");
+
+.about-container {
+  height: 100vh;
+  background: #fff;
+  padding-top: 2%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.about-heading h1 {
+  font-size: 2.4rem;
+  color: #161b3f;
+  text-align: center;
+  font-family: "Exo 2", sans-serif;
+}
+.about-heading::after {
+  content: "";
+  position: absolute;
+  transform: translateX(-50%);
+  width: 75px;
+  height: 4px;
+  background: #161b3f;
+}
+.about-card {
+  height: 73.16%;
+  width: 60%;
+  margin: 3% auto;
+  display: flex;
+  box-shadow: 0 0 5px 5px gray;
+  transition: 1.4s transform;
+}
+.about-card:hover {
+  box-shadow: 0 0 5px 6px gray;
+  transform: scale(1.04);
+}
+.about-picture {
+  background-image: url("profilephoto.png");
+  height: 100%;
+  width: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.about-content {
+  background-color: #fff;
+  height: 100%;
+  width: 50%;
+  padding: 5%;
+  color: #161b3f;
+}
+.about-content li {
+  display: flex;
+  list-style: none;
+  text-align: left;
+  padding: 0 0 4% 5%;
+  font-family: "Wix Madefor Display", sans-serif;
+}
+.about-content li::before {
+  content: "★";
+  position: absolute;
+  transform: translateX(-200%);
+}
+.about-content p {
+  display: flex;
+  font-size: 0.9rem;
+  text-align: left;
+  padding-left: 5%;
+  font-family: "Wix Madefor Display", sans-serif;
+}
+.about-content p::before {
+  content: "☆";
+  margin-right: 2%;
+}
+
+@media screen and (max-width: 729px) {
+  .about-container {
+    height: auto;
+    padding: 5vh 0;
+  }
+  .about-heading h1 {
+    font-size: 1.4rem;
+  }
+  .about-heading::after {
+    height: 0.2rem;
+    width: 15vw;
+  }
+  .about-card {
+    height: auto;
+    margin-top: 10%;
+    width: 80%;
+    box-shadow: 0 0 3px 3px gray;
+  }
+  .about-card:hover {
+    transform: none;
+  }
+  .about-picture {
+    visibility: hidden;
+    display: none;
+  }
+  .about-content {
+    width: 100%;
+    padding: 8% 8% 8% 13%;
+  }
+  .about-content li {
+    padding: 0% 0% 5% 2%;
+  }
+  .about-content li::before {
+    transform: translateX(-150%);
+  }
+  .about-content p {
+    padding-left: 2%;
+  }
+  .about-content p::before {
+    margin-right: 4%;
+  }
+}

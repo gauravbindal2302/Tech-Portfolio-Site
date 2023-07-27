@@ -1,0 +1,155 @@
+.contact-container {
+  height: 100vh;
+  background: #161b3f;
+  padding-top: 2%;
+}
+.contact-heading {
+  font-family: "Exo 2", sans-serif;
+  color: #fff;
+  text-align: center;
+  padding: 0.5% 0%;
+}
+.contact-heading h1 {
+  font-size: 2.4rem;
+}
+.contact-heading::after {
+  content: "";
+  position: absolute;
+  transform: translateX(-50%);
+  width: 75px;
+  height: 4px;
+  background-color: #a2a1a0;
+}
+.contact-box {
+  margin: auto;
+  margin-top: 2%;
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+}
+.contact-left {
+  width: 50%;
+  background-color: #161b3f;
+  padding: 5% 3%;
+}
+.contact-left-content i {
+  background-color: #fff;
+  color: #161b3f;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 20px;
+}
+.contact-left-content i:hover {
+  transform: scale(1.07);
+}
+.contact-left-content h2 {
+  font-size: 1.3rem;
+  margin: -35px 0 10px 60px;
+  color: aqua;
+}
+.contact-left-content p {
+  color: #ababab;
+  padding-left: 60px;
+}
+.contact-left-content p a {
+  color: #ababab;
+}
+.contents {
+  display: inline-block;
+}
+.social-icons {
+  margin: 15px auto auto 60px;
+}
+.social-icons i {
+  color: white;
+  font-size: 18px;
+  display: inline-block;
+  transition: transform 0.2s;
+  margin-right: 11px;
+}
+.social-icons i:hover {
+  transform: scale(1.5);
+}
+.contact-right {
+  width: 50%;
+  background-color: #161b3f;
+}
+.contact-right form {
+  width: 100%;
+  padding: 3% 0%;
+}
+form input,
+form textarea {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background-color: #ababab;
+  padding: 15px;
+  margin: 15px 0;
+  color: black;
+  font-size: 15px;
+  border-radius: 5px;
+}
+.btn-2 {
+  color: #fff;
+  margin: 15px 0;
+  background-color: rgb(141, 136, 136);
+  outline: none;
+  transition: 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-container {
+    height: auto;
+    padding: 5vh 0;
+  }
+  .contact-heading h1 {
+    font-size: 1.4rem;
+  }
+  .contact-heading::after {
+    height: 0.2rem;
+    width: 15vw;
+  }
+  .contact-box {
+    flex-direction: column;
+    margin-top: 10%;
+  }
+  .contact-left {
+    width: 100%;
+    margin-top: -10px;
+    padding-left: 0;
+  }
+  .contact-left-content i {
+    height: 35px;
+    width: 35px;
+    font-size: 16px;
+    padding: 9px;
+  }
+  .contact-left-content h2 {
+    font-size: 20px;
+    padding: 5px 0 2px 0;
+  }
+  .contact-left-content p {
+    padding-left: 60px;
+  }
+  .social-icons {
+    margin-left: 60px;
+  }
+  .social-icons i {
+    font-size: 20px;
+  }
+  .contact-right {
+    width: 100%;
+  }
+  form input,
+  form textarea {
+    padding: 10px 15px;
+    margin: 20px 0 0 0;
+    color: black;
+    font-size: 15px;
+    border-radius: 5px;
+  }
+  .btn-2 {
+    padding: 5px 10px;
+  }
+}
